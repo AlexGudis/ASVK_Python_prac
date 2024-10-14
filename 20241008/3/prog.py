@@ -39,19 +39,15 @@ full = (W - 2) * (H - 2)
 for el in cont_ans:
     print(*el, sep='')
 
-gas_points = int((H - 2 - water_fill) * (W - 2))
-water_points = int(water_fill * (W - 2))
-
-
-if gas_points >= water_points:
-    print(f"{'.' * 20} {gas_points}/{(W - 2) * (H - 2)}")
-    print(f"{'~' * round(20 * water_points / gas_points)}{' ' * (20 - round(20 * water_points / gas_points))} {' ' * (len(str(gas_points)) - len(str(water_points)))}{water_points}/{(W - 2) * (H - 2)}")
+if gas_cnt >= water_cnt:
+    print(f"{'.' * 20} {gas_cnt}/{(W - 2) * (H - 2)}")
+    print(f"{'~' * round(20 * water_cnt / gas_cnt)}{' ' * (20 - round(20 * water_cnt / gas_cnt))} {' ' * (len(str(gas_cnt)) - len(str(water_cnt)))}{water_cnt}/{(W - 2) * (H - 2)}")
 
     #line_length = int((H - 2 - water_fill) * (W - 2)) + 1 + len(str(gas_fill * (W - 2)))+ len(str(full))
 else:
     #line_length = int(water_fill * (W - 2)) + 1 + len(str(water_fill * (W - 2)))+ len(str(full))
-    print(f"{'.' * round(20 * gas_points / water_points)}{' ' * (20 - round(20 * gas_points / water_points))} {' ' * (len(str(water_points)) - len(str(gas_points)))}{gas_points}/{(W - 2) * (H - 2)}")
-    print(f"{'~' * 20} {water_points}/{(W - 2) * (H - 2)}")
+    print(f"{'.' * round(20 * gas_cnt / water_cnt)}{' ' * (20 - round(20 * gas_cnt / water_cnt))} {' ' * (len(str(water_cnt)) - len(str(gas_cnt)))}{gas_cnt}/{(W - 2) * (H - 2)}")
+    print(f"{'~' * 20} {water_cnt}/{(W - 2) * (H - 2)}")
 
 
 
