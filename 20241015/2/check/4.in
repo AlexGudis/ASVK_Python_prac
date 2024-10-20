@@ -1,0 +1,9 @@
+:sin_cos x y sin(x)*cos(y)
+:sqqqrt z sqrt(z)
+:max a b c d max(a,b,c,d)
+:min a b c min(a,b,c)
+sin_cos 1 2
+sqqqrt 4
+max 5 6 -3 12
+min 0 0 -100
+quit "{} &&& {}"

@@ -1,0 +1,5 @@
+:decor s f "--<<{}|||{}>>--".format(s,f)
+decor GGG FFF
+:pow a n a**n
+pow 2 8
+quit "{} ||| {}"

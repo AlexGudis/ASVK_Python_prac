@@ -1,0 +1,7 @@
+:abcd a b c d (a-b)*(c+d)
+abcd 1 2 3 4
+:check a "|||{}|||".format(a)
+:ten 10
+ten
+check AAA
+quit "{}{}"
