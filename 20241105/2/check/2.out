@@ -1,0 +1,4 @@
+r(True):2.0 s(True):1.0 p(True):15.0
+r < s=False, p < s=False, p < r=False, r < p=True, s < p=True
+s in r=False, r in s=False, s in p=True, r in p=True, p in r=False
+r & s=True, s & r=True, p & s=True

@@ -1,0 +1,8 @@
+r = Triangle((-5, 1), (-4, 3), (-3, 1))
+s = Triangle((-4, 2), (-3, 3), (-2, 2))
+p = Triangle((-7, 1), (-1, 1), (-5, 6))
+
+print(*(f"{n}({bool(x)}):{round(abs(x), 3)}" for n, x in zip("rsp", (r, s, p))))
+print(f"{r < s=}, {p < s=}, {p < r=}, {r < p=}, {s < p=}")
+print(f"{s in r=}, {r in s=}, {s in p=}, {r in p=}, {p in r=}")
+print(f"{r & s=}, {s & r=}, {p & s=}")
