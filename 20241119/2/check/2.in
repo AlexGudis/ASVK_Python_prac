@@ -1,0 +1,15 @@
+class C:
+  num = Num()
+
+class D:
+    data = Num()
+
+print(C().num)
+c, d = C(), C()
+e, f = D(), D()
+c.num = d.num = 5
+e.data = -5
+f.data = 8
+print(c.num+e.data)
+c.num = "qwerq"
+print(c.num+f.data)

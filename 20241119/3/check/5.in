@@ -1,0 +1,8 @@
+wo = Vowel(y=22, a=12, i=3)
+print(wo, wo.full)
+
+try:
+    wo.full = True
+except AttributeError as e:
+    print(e)
+print(wo.full)

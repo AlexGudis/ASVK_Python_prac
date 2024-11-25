@@ -1,0 +1,21 @@
+class C:
+  num = Num()
+
+class D:
+    data = Num()
+
+class P:
+    info = Num()
+
+print(C().num)
+c, d = C(), C()
+e, f = D(), D()
+p = P()
+p.info = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+print(c.num + p.info + e.data)
+print(d.num + p.info + f.data)
+f.data = -1
+e.data = -1
+print(e.data + f.data)
+p.info = 2
+print(p.info+f.data)

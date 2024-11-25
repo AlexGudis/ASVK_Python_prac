@@ -1,0 +1,22 @@
+@objcount
+class C:
+
+    def __init__(self):
+        self.data = "LALALALULULU"
+
+@objcount
+class D:
+
+    def __init__(self):
+        self.data = "DDDDDDDDDD"
+
+    def __del__(self):
+        print("DEEEEEEL")
+
+
+
+c, d, e = C(), D(), C()
+print(C.counter)
+del e
+c = 100500
+print(C.counter)

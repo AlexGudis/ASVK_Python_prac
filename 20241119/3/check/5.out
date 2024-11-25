@@ -1,0 +1,3 @@
+a: 12, i: 3, y: 22 False
+Cannot create 'full', bc it isn't in __slots__
+False
