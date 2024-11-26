@@ -6,15 +6,19 @@ def scale(a, b, A, B, x):
 def show(sc):
     return '\n'.join("".join(s) for s in sc)
 
-W = 60
+W = 40
 H = 20
-A, B = -3, 4
+A, B = -6, 6
 screen = [[" "] * W for _ in range(H)]
 
-for i in range(W):
+i = 0
+while i < W:
     x = scale(0, W - 1, A, B, i)
     y = sin(x)
+    #y = (x-13)**2+x+1
     shift = round(scale(-1, 1, 0, H-1, y))
-    screen[shift][i] = "#"
+    if round(i) < W:
+        screen[shift][round(i)] = "#"
+    i += 0.1
 
 print(show(screen))

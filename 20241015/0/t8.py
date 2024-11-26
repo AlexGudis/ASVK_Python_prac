@@ -1,4 +1,6 @@
-s = input()
+from math import *
+
+s = input().split()
 a, b = eval(input())
-print(eval(s, None, {"x":a, "y":b}))
-print(eval(s, None, {"x":b, "y":a}))
+print(eval(s[0], None, {'x':a, "y":b}))
+print(eval(s[0], None, {'x':b, "y":a}))
