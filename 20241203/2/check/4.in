@@ -1,0 +1,14 @@
+store 100 x
+store 10 y
+
+check: div x y z
+    out z
+    out x
+
+     ifne y z check
+
+     cweckwenekcnwnewe
+
+add xxx
+
+ifgt xey xo

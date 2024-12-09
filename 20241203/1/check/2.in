@@ -1,0 +1,14 @@
+class C(metaclass=dump):
+    def __init__(self, smth='ccccc'):
+        self.s = smth
+
+    def pr_smth(self, st=None):
+        return self.s + st if st else 'bbbbbb'
+
+c = C()
+print(c.pr_smth())
+print(c.pr_smth('wiweioj'))
+
+
+b = C('alalalalla')
+print(b.pr_smth('ddddd'))

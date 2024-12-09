@@ -1,0 +1,7 @@
+__init__: (10,), {}
+add: (9,), {}
+Dada
+33
+add: (9,), {'another': 10}
+Dada
+31
